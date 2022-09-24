@@ -12,9 +12,8 @@
     <label for="upload" id="up">写真を撮影してアップロードする</label>
     <input id="upload" type="file" name="image" accept="image/*" capture="camera" onchange="previewImage(this);">
 
-    <p>
     <img id="preview" style="width: 100%;height: auto;display: block;">
-    </p>
+
     
     <label for="exampleColorInput" class="form-label">色を選択する</label>
     <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
@@ -24,7 +23,10 @@
     <input type="range" class="form-range" id="range" value="10">
     <span id="value">10</span>
 
+    <canvas id="result" width="3264" height="2448" style="width: 100%;height: auto;display: block;"></canvas>
+
     <script src="script.js"></script>
 
+    
 </body>
 </html>
