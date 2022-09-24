@@ -8,7 +8,7 @@
     box-shadow: 2px 2px 5px 0px rgba(200, 200, 200, 1);
 }
 
-label {
+#up {
     display: block;
     width: 320px;
     margin: 0 auto;
@@ -18,10 +18,11 @@ label {
     box-shadow: none;
     color: #ffffff;
     font-size: 1rem;
-    background-color: #00c2bc;
+    background-color: #59eae7;
     cursor: pointer;
+    border-radius: 10px;
 }
 
-input {
+#upload {
     display: none;
 }
