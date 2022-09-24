@@ -29,7 +29,10 @@ currentImg.onload = () => {
 function draw(){
   let data = createImageData(currentImg);
   console.log(data);
-  document.getElementById('result').getContext('2d').putImageData(data, 0, 0);
+  const canvas = document.getElementById('result');
+  canvas.width = data.width;
+  canvas.height = data.height;
+  canvas.getContext('2d').putImageData(data, 0, 0);
 }
 
 
