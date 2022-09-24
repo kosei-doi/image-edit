@@ -9,8 +9,12 @@
 </head>
 <body>        
     <label for="upload">写真を撮影してアップロードする</label>
-    <input id="upload" type="file" name="image" accept="image/*" capture="camera">
-    
+    <input id="upload" type="file" name="image" accept="image/*" capture="camera" onchange="previewImage(this);">
+
+    <p>
+    <img id="preview" style="width: 100%;height: auto;display: block;">
+    </p>
+
     <script src="script.js"></script>
 
 </body>
